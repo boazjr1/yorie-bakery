@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yorie’s Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🍰 Yorie’s Bakery</h1>
+
+<p class="tagline">
+    Freshly baked happiness delivered daily 🍪✨
+</p>
+
+    <!-- 🧁 PRODUCTS -->
+    <section id="products">
+        <h2>🧁 Our Products</h2>
+<div class="product">
+            <img src="images/birthday cake for kids.jpg" alt="Birthday Cake">
+            <h3>Birthday Cake</h3>
+            <p>K700</p>
+            <button onclick="addToCart('Birthday Cake', 700)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/black forest cake.jpg" alt="black foest Cake">
+            <h3>Black Forest Cake</h3>
+            <p>K750</p>
+            <button onclick="addToCart('Black Forest Cake', 750)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/chocolate.jpg" alt="Chocolate Cake">  
+            <h3>Chocolate Cake</h3>
+            <p>K480</p>
+            <button onclick="addToCart('Chocolate Cake', 480)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/vanilla.jpg" alt="Vanilla Cake">
+            <h3>Vanilla Cake</h3>
+            <p>K400</p>
+            <button onclick="addToCart('Vanilla Cake', 400)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+             <img src="images/red-velvet.jpg" alt="Red Velvet Cake">
+            <h3>Red Velvet Cake</h3>
+            <p>K500</p>
+            <button onclick="addToCart('Red Velvet Cake', 500)">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- 🛒 CART -->
+    <section id="cartSection">
+        <h2>🛒 Cart</h2>
+
+        <ul id="cart"></ul>
+
+        <p id="total">Total: K0</p>
+    </section>
+
+    <!-- 🧾 CHECKOUT -->
+    <section id="checkoutSection">
+        <h2>🧾 Checkout</h2>
+
+        <input id="name" type="text" placeholder="Full Name" />
+        <br><br>
+
+        <input id="phone" type="text" placeholder="Phone Number" />
+        <br><br>
+
+        <input id="address" type="text" placeholder="Delivery Address" />
+        <br><br>
+
+        <button onclick="checkout()">Place Order via WhatsApp</button>
+        
+<h3>🚚 Delivery Option</h3>
+
+<select id="deliveryType">
+    <option value="pickup">Pickup</option>
+    <option value="delivery">Delivery (Yango Rider)</option>
+</select>
+
+<select id="location">
+    <option value="">-- Select Area --</option>
+    <option value="Lusaka CBD">Lusaka CBD</option>
+    <option value="Matero">Matero</option>
+    <option value="Chilenje">Chilenje</option>
+    <option value="Woodlands">Woodlands</option>
+    <option value="Kabulonga">Kabulonga</option>
+    <option value="UNZA Area">UNZA Area</option>
+    <option value="Chelstone">Chelstone</option>
+    <option value="Kabanana">Kabanana</option>
+</select>
+    <!-- ⚙️ JS (VERY IMPORTANT - must be last) -->
+    <script src="app.js"></script>
+</section>
+</body>
+
+</html>

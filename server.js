@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
 
 app.use(express.static('public'));
 
@@ -8,6 +7,8 @@ app.get('/', (req, res) => {
   res.send('Yorie’s Bakery Server is Running 🍰');
 });
 
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
